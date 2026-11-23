@@ -3,11 +3,11 @@ namespace: io.kestra.templates
 
 tasks:
 - id: date
-  type: io.kestra.plugin.templates.Example
+  type: io.kestra.plugin.runpod.Example
   format: "{{taskrun.startDate}}"
 - id: task-id
-  type: io.kestra.plugin.templates.Example
+  type: io.kestra.plugin.runpod.Example
   format: "{{task.id}}"
 - id: flow-id
-  type: io.kestra.plugin.templates.Example
+  type: io.kestra.plugin.runpod.Example
   format: "{{outputs['task-id'].child.value}}"

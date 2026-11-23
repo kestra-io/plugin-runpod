@@ -1,4 +1,4 @@
-package io.kestra.plugin.templates;
+package io.kestra.plugin.runpod;
 
 import io.kestra.core.models.annotations.Plugin;
 import io.kestra.core.models.property.Property;
@@ -31,7 +31,7 @@ import org.slf4j.Logger;
 
                 tasks:
                   - id: reverse
-                    type: io.kestra.plugin.templates.Example
+                    type: io.kestra.plugin.runpod.Example
                     format: "Text to be reverted"
                 """
         )
